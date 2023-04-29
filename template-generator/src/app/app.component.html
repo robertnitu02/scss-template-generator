@@ -1,15 +1,79 @@
 <div class="app">
   <div class="navbar">
-    <span class="button">{{ 'template-generator.home' | translate }}</span>
+    <span class="button" (click)="goHome()">{{ 'template-generator.home' | translate }}</span>
     <span class="space"></span>
     <span class="button">
       <img src="assets/images/{{language}}.png" alt="language" (click)="changeLanguage()" class="language-image"/>
     </span>
   </div>
   <div class="content">
-    bb
+    <ng-container *ngIf="currentViewState === viewState.HOME">
+      <div class="home">
+        <div class="title">
+          TITLE
+        </div>
+        <div class="content">
+          <div class="left">
+            <div class="paragraphs">
+              <div class="paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et velit sit amet massa tincidunt
+                tristique id nec velit. Fusce at vulputate enim. In mollis tristique libero et mattis. Curabitur id
+                auctor lorem. Etiam gravida feugiat eros, vitae vulputate augue dignissim in. Mauris elementum, purus
+                vel tincidunt tempor, nunc felis molestie ligula, non luctus risus orci efficitur nunc. Vestibulum in
+                tellus nunc. Praesent quis diam auctor, condimentum turpis vitae, maximus elit. Duis vel ex dui. Aliquam
+                facilisis elit sed volutpat facilisis. Phasellus ac enim vulputate, euismod justo sed, efficitur justo.
+                Morbi aliquet tincidunt lectus, ac varius urna. Suspendisse et turpis luctus, facilisis sapien dictum,
+                dictum lorem.
+              </div>
+              <div class="paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et velit sit amet massa tincidunt
+                tristique id nec velit. Fusce at vulputate enim. In mollis tristique libero et mattis. Curabitur id
+                auctor lorem. Etiam gravida feugiat eros, vitae vulputate augue dignissim in. Mauris elementum, purus
+                vel tincidunt tempor, nunc felis molestie ligula, non luctus risus orci efficitur nunc. Vestibulum in
+                tellus nunc. Praesent quis diam auctor, condimentum turpis vitae, maximus elit. Duis vel ex dui. Aliquam
+                facilisis elit sed volutpat facilisis. Phasellus ac enim vulputate, euismod justo sed, efficitur justo.
+                Morbi aliquet tincidunt lectus, ac varius urna. Suspendisse et turpis luctus, facilisis sapien dictum,
+                dictum lorem.
+              </div>
+              <div class="paragraph">
+                <div class="info">
+                  <span class="text">TEXT</span>
+                  <span class="button" (click)="createTemplate()">
+                    CREATE
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right-top">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et velit sit amet massa tincidunt
+            tristique id nec velit. Fusce at vulputate enim. In mollis tristique libero et mattis. Curabitur id
+            auctor lorem. Etiam gravida feugiat eros, vitae vulputate augue dignissim in. Mauris elementum, purus
+            vel tincidunt tempor, nunc felis molestie ligula, non luctus risus orci efficitur nunc. Vestibulum in
+            tellus nunc.
+          </div>
+          <div class="right-mid">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et velit sit amet massa tincidunt
+            tristique id nec velit. Fusce at vulputate enim. In mollis tristique libero et mattis. Curabitur id
+            auctor lorem. Etiam gravida feugiat eros, vitae vulputate augue dignissim in. Mauris elementum, purus
+            vel tincidunt tempor, nunc felis molestie ligula, non luctus risus orci efficitur nunc. Vestibulum in
+            tellus nunc.
+          </div>
+          <div class="right-bottom">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et velit sit amet massa tincidunt
+            tristique id nec velit. Fusce at vulputate enim. In mollis tristique libero et mattis. Curabitur id
+            auctor lorem. Etiam gravida feugiat eros, vitae vulputate augue dignissim in. Mauris elementum, purus
+            vel tincidunt tempor, nunc felis molestie ligula, non luctus risus orci efficitur nunc. Vestibulum in
+            tellus nunc.
+          </div>
+        </div>
+      </div>
+    </ng-container>
+    <ng-container *ngIf="currentViewState === viewState.FORM">
+      test
+    </ng-container>
   </div>
   <div class="footer">
-    cc
+    <span class="text">Nițu Robert | <a href="https://github.com/robertnitu02" target="_blank">GitHub</a> | SCSS U.P.B © 2023</span>
   </div>
 </div>
