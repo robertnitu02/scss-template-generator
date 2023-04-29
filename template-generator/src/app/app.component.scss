@@ -137,6 +137,79 @@
         }
       }
     }
+
+    .form {
+      display: grid;
+      width: 1080px;
+      height: 750px;
+      grid-template-rows: 10% 80% 10%;
+      @include mat.elevation(2);
+
+      background-color: hotpink;
+
+      .title {
+        display: grid;
+        text-align: center;
+        align-content: center;
+        font-size: 1.5rem;
+        font-weight: bolder;
+        color: variables.$white;
+      }
+
+      .content {
+        display: grid;
+        width: 100%;
+        height: 100%;
+        padding: 5rem;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 5px;
+
+        .question {
+          display: grid;
+          align-content: center;
+          text-align: center;
+          width: 100%;
+          height: 100%;
+          border: 2px solid white;
+        }
+
+        .answers {
+          display: grid;
+          width: 100%;
+          height: 100%;
+          grid-template-rows: 1fr 1fr;
+          grid-template-columns: 1fr 1fr;
+
+          .answer {
+            display: grid;
+            align-content: center;
+            text-align: center;
+            border: 2px solid black;
+          }
+        }
+
+        .control {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-gap: 5px;
+          height: 100%;
+          width: 100%;
+
+          .button {
+            display: grid;
+            align-content: center;
+            text-align: center;
+            font-size: 1rem;
+            font-weight: bold;
+            color: variables.$white;
+          }
+
+          .disabled {
+            color: variables.$gray;
+          }
+        }
+      }
+    }
   }
 
   .footer {
