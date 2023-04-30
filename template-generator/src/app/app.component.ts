@@ -20,7 +20,7 @@ enum ViewState {
 export class AppComponent implements OnInit {
   viewState = ViewState;
 
-  currentViewState = this.viewState.HOME;
+  currentViewState = this.viewState.RESULT;
   questions: Question[] = [
     {
       id: 0,
@@ -42,7 +42,7 @@ export class AppComponent implements OnInit {
   language = 'en';
   currentQuestionIndex = 0;
   savedAnswer = -1;
-  savedAnswers: number[] = [];
+  savedAnswers: number[] = [1, 1, 1];
 
   constructor(private translate: TranslateService) {
     translate.setTranslation('en', defaultEnLanguage);

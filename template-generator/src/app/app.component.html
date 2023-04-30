@@ -79,14 +79,16 @@
             {{ questions[currentQuestionIndex].question }}
           </div>
           <div class="answers">
-              <span class="answer" (click)="saveAnswer(0)"> {{ questions[currentQuestionIndex].answers[0] }} </span>
-              <span class="answer" (click)="saveAnswer(1)"> {{ questions[currentQuestionIndex].answers[1] }} </span>
-              <span class="answer" (click)="saveAnswer(2)"> {{ questions[currentQuestionIndex].answers[2] }} </span>
-              <span class="answer" (click)="saveAnswer(3)"> {{ questions[currentQuestionIndex].answers[3] }} </span>
+            <span class="answer" (click)="saveAnswer(0)"> {{ questions[currentQuestionIndex].answers[0] }} </span>
+            <span class="answer" (click)="saveAnswer(1)"> {{ questions[currentQuestionIndex].answers[1] }} </span>
+            <span class="answer" (click)="saveAnswer(2)"> {{ questions[currentQuestionIndex].answers[2] }} </span>
+            <span class="answer" (click)="saveAnswer(3)"> {{ questions[currentQuestionIndex].answers[3] }} </span>
           </div>
           <div class="control">
             <span class="button {{currentQuestionIndex === 0 ? 'disabled' : ''}}" (click)="goBack()"> < GO BACK</span>
-            <span class="button {{savedAnswer === -1 ? 'disabled' : ''}}" (click)="goNext()"> NEXT ></span>
+            <span
+              class="button {{savedAnswer === -1 || currentQuestionIndex === questions.length - 1 ? 'disabled' : ''}}"
+              (click)="goNext()"> NEXT ></span>
             <span class="button {{currentQuestionIndex !== questions.length - 1 ? 'disabled' : ''}}" (click)="finish()"> FINISH ></span>
           </div>
         </div>

@@ -1,0 +1,24 @@
+@use '../../shared/styles/variables' as variables;
+@use '@angular/material' as mat;
+
+.result {
+  display: grid;
+  width: 1080px;
+  height: 750px;
+  text-align: center;
+  grid-template-rows: 10% 90%;
+  align-items: center;
+  @include mat.elevation(2);
+
+  background-color: hotpink;
+
+  .title {
+
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .content {
+
+  }
+}
