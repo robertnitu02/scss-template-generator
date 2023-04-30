@@ -22,7 +22,8 @@
     "@angular/router": "^15.2.0",
     "@ngx-translate/core": "^14.0.0",
     "@ngx-translate/http-loader": "^7.0.0",
-    "rxjs": "~7.8.0",
+    "clarity-angular": "^0.10.28",
+    "rxjs": "^6.6.7",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0"
   },

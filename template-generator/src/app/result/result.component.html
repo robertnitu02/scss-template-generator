@@ -8,9 +8,7 @@
       <span [cdkCopyToClipboard]="code">COPY</span>
     </span>
     <div class="html-code">
-      <pre>
-        {{ code }}
-      </pre>
+      <code-snippet [code]="code"></code-snippet>
     </div>
     <span class="content__title">
       SCSS

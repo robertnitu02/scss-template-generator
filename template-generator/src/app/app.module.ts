@@ -13,9 +13,16 @@ import { ResultComponent } from './result/result.component';
 import { LoadingComponent } from './loading/loading.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { ClipboardModule } from '@angular/cdk/clipboard';
+import { CodeSnippetComponent } from './code-snippet/code-snippet.component';
+import { ClrSyntaxHighlightModule } from 'clarity-angular';
 
 @NgModule({
-  declarations: [AppComponent, ResultComponent, LoadingComponent],
+  declarations: [
+    AppComponent,
+    ResultComponent,
+    LoadingComponent,
+    CodeSnippetComponent,
+  ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -30,6 +37,7 @@ import { ClipboardModule } from '@angular/cdk/clipboard';
     FormsModule,
     MatProgressSpinnerModule,
     ClipboardModule,
+    ClrSyntaxHighlightModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
