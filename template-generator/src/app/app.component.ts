@@ -39,6 +39,7 @@ export class AppComponent implements OnInit {
   ];
 
   language = 'en';
+  showResults = false;
   currentQuestionIndex = 0;
   savedAnswer = -1;
   savedAnswers: number[] = [];
@@ -98,5 +99,21 @@ export class AppComponent implements OnInit {
     this.savedAnswers[this.questions[this.currentQuestionIndex].id] =
       this.savedAnswer;
     console.log(`index: ${this.savedAnswer}`);
+  }
+
+  finish() {
+    console.log(
+      `${this.savedAnswers.length} | ${
+        this.questions.length
+      } | ${this.savedAnswers.some((el) => el !== null)}`
+    );
+    if (
+      this.savedAnswers.length !== this.questions.length ||
+      !this.savedAnswers.some((el) => el !== null)
+    )
+      return;
+
+    console.log('finish');
+    this.showResults = true;
   }
 }
