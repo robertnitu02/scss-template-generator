@@ -8,6 +8,7 @@ import defaultRoLanguage from '../shared/i18n/ro.json';
 enum ViewState {
   HOME,
   FORM,
+  LOADING,
   RESULT,
 }
 
@@ -19,7 +20,7 @@ enum ViewState {
 export class AppComponent implements OnInit {
   viewState = ViewState;
 
-  currentViewState = this.viewState.FORM;
+  currentViewState = this.viewState.HOME;
   questions: Question[] = [
     {
       id: 0,
@@ -39,7 +40,6 @@ export class AppComponent implements OnInit {
   ];
 
   language = 'en';
-  showResults = false;
   currentQuestionIndex = 0;
   savedAnswer = -1;
   savedAnswers: number[] = [];
@@ -60,7 +60,11 @@ export class AppComponent implements OnInit {
   }
 
   goHome() {
-    if (this.currentViewState === this.viewState.HOME) return;
+    if (
+      this.currentViewState === this.viewState.HOME ||
+      this.currentViewState === this.viewState.LOADING
+    )
+      return;
     this.currentViewState = this.viewState.HOME;
   }
 
@@ -114,6 +118,9 @@ export class AppComponent implements OnInit {
       return;
 
     console.log('finish');
-    this.showResults = true;
+    this.currentViewState = this.viewState.LOADING;
+    setTimeout(() => {
+      this.currentViewState = this.viewState.RESULT;
+    }, 3500);
   }
 }

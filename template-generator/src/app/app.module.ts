@@ -9,9 +9,12 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { ResultComponent } from './result/result.component';
+import { LoadingComponent } from './loading/loading.component';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, ResultComponent, LoadingComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -24,6 +27,7 @@ import { FormsModule } from '@angular/forms';
       },
     }),
     FormsModule,
+    MatProgressSpinnerModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
