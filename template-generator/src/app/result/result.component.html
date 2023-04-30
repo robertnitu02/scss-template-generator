@@ -3,6 +3,23 @@
     REZULTAT
   </div>
   <div class="content">
-
+    <span class="content__title">
+      HTML
+      <span [cdkCopyToClipboard]="code">COPY</span>
+    </span>
+    <div class="html-code">
+      <pre>
+        {{ code }}
+      </pre>
+    </div>
+    <span class="content__title">
+      SCSS
+      <span [cdkCopyToClipboard]="code">COPY</span>
+    </span>
+    <div class="css-code">
+      <pre>
+        {{ code }}
+      </pre>
+    </div>
   </div>
 </div>
