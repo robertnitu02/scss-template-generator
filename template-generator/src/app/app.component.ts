@@ -20,7 +20,7 @@ enum ViewState {
 export class AppComponent implements OnInit {
   viewState = ViewState;
 
-  currentViewState = this.viewState.FORM;
+  currentViewState = this.viewState.RESULT;
   questions: Question[] = [
     {
       id: 0,

@@ -10,11 +10,12 @@
   align-items: center;
   @include mat.elevation(2);
 
-  background-color: hotpink;
+  background: radial-gradient(circle at 10% 20%, rgb(75, 108, 183) 0%, rgb(55, 82, 141) 90%);
 
   .title {
     font-size: 1.5rem;
     font-weight: bold;
+    color: variables.$white;
   }
 
   .content {
@@ -47,6 +48,7 @@
         text-align: center;
         font-size: 1rem;
         font-weight: bold;
+        color: variables.$white;
       }
     }
   }
