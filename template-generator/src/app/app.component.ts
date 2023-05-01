@@ -22,10 +22,13 @@ export class AppComponent implements OnInit {
   currentViewState = this.viewState.HOME;
 
   language = 'en';
+
   currentQuestionIndex = 0;
-  maxQuestions = 4;
+  maxQuestions = 6;
+  onlyTwoAnswerQuestions = [4];
+
   savedAnswer = -1;
-  savedAnswers: number[] = [-1, -1, -1, -1];
+  savedAnswers: number[] = [-1, -1, -1, -1, -1, -1];
 
   constructor(private translate: TranslateService) {
     translate.setTranslation('en', defaultEnLanguage);
@@ -99,5 +102,9 @@ export class AppComponent implements OnInit {
 
   canFinish() {
     return this.savedAnswers.some((el) => el === -1);
+  }
+
+  showQuestion() {
+    return !this.onlyTwoAnswerQuestions.includes(this.currentQuestionIndex);
   }
 }

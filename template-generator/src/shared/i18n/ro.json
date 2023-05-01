@@ -19,35 +19,47 @@
       "5": "Nu mai pierdeți timp și bani pe design-ul site-ului. Lăsați generatorul nostru de template-uri bazat pe formular să facă munca grea pentru dumneavoastră. Spuneți adio frustrărilor din design-ul site-ului. Folosiți formularul nostru pentru a obține un template de site personalizat pentru nevoile și preferințele dumneavoastră."
     },
     "questions": {
-      "0": "întrebare 1",
-      "1": "întrebare 2",
-      "2": "întrebare 3",
-      "3": "întrebare 4"
+      "0": "Care sunt tipurile de culori preferate?",
+      "1": "Numărul de opțiuni din bara de navigare:",
+      "2": "Numărul de informații din josul paginii:",
+      "3": "Cum dorești să fie afișat conținutul paginii?",
+      "4": "Tema site-ului:",
+      "5": "Alege un tip de font:"
     },
     "answers": {
       "0": {
-        "0": "răspuns 1",
-        "1": "răspuns 2",
-        "2": "răspuns 3",
-        "3": "răspuns 4"
+        "0": "Cool",
+        "1": "Foarte cool",
+        "2": "Calde",
+        "3": "Foarte calde"
       },
       "1": {
-        "0": "1 răspuns 1",
-        "1": "1 răspuns 2",
-        "2": "1 răspuns 3",
-        "3": "1 răspuns 4"
+        "0": "2",
+        "1": "3",
+        "2": "4",
+        "3": "5"
       },
       "2": {
-        "0": "2 răspuns 1",
-        "1": "2 răspuns 2",
-        "2": "2 răspuns 3",
-        "3": "2 răspuns 4"
+        "0": "1",
+        "1": "2",
+        "2": "3",
+        "3": "4"
       },
       "3": {
-        "0": "3 răspuns 1",
-        "1": "3 răspuns 2",
-        "2": "3 răspuns 3",
-        "3": "3 răspuns 4"
+        "0": "Aerisit",
+        "1": "Compact",
+        "2": "Plin de informații",
+        "3": "Mixt"
+      },
+      "4": {
+        "0": "Modern",
+        "1": "De modă veche"
+      },
+      "5": {
+        "0": "Verdana",
+        "1": "Franklin Gothic Medium",
+        "2": "Courier New",
+        "3": "Lucida Sans"
       }
     }
   }

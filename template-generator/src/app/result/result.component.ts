@@ -49,7 +49,7 @@ export class ResultComponent implements OnInit {
     name: string = 'World!';
   }`;
 
-  sourceScss: string = `
+  sourceCss: string = `
   import { Component } from '@angular/core';
 
   @Component({
@@ -90,7 +90,6 @@ export class ResultComponent implements OnInit {
   class HelloWorldComponent {
     name: string = 'World!';
   }`;
-  ngOnInit(): void {
-    console.log(this.results);
-  }
+
+  ngOnInit(): void {}
 }

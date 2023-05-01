@@ -19,35 +19,47 @@
       "5": "Don't waste time and money on website design. Let our form-based template generator do the hard work for you. Say goodbye to the frustration of website design. Use our form to get a website template that's tailored to your exact needs and preferences.\n\n"
     },
     "questions": {
-      "0": "question 1",
-      "1": "question 2",
-      "2": "question 3",
-      "3": "question 4"
+      "0": "What are your favorite color types?",
+      "1": "Number of options from navigation bar:",
+      "2": "Number of information's from footer:",
+      "3": "How do you want the content of the page to be displayed?",
+      "4": "Theme of website:",
+      "5": "Choose a font type:"
     },
     "answers": {
       "0": {
-        "0": "answer 1",
-        "1": "answer 2",
-        "2": "answer 3",
-        "3": "answer 4"
+        "0": "Cool",
+        "1": "Light Cool",
+        "2": "Warm",
+        "3": "Light Warm"
       },
       "1": {
-        "0": "1 answer 1",
-        "1": "1 answer 2",
-        "2": "1 answer 3",
-        "3": "1 answer 4"
+        "0": "2",
+        "1": "3",
+        "2": "4",
+        "3": "5"
       },
       "2": {
-        "0": "2 answer 1",
-        "1": "2 answer 2",
-        "2": "2 answer 3",
-        "3": "2 answer 4"
+        "0": "1",
+        "1": "2",
+        "2": "3",
+        "3": "4"
       },
       "3": {
-        "0": "3 answer 1",
-        "1": "3 answer 2",
-        "2": "3 answer 3",
-        "3": "3 answer 4"
+        "0": "Airy",
+        "1": "Compact",
+        "2": "Full of information's",
+        "3": "Mixed"
+      },
+      "4": {
+        "0": "Modern",
+        "1": "Old School"
+      },
+      "5": {
+        "0": "Verdana",
+        "1": "Franklin Gothic Medium",
+        "2": "Courier New",
+        "3": "Lucida Sans"
       }
     }
   }

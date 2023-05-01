@@ -41,14 +41,16 @@
                   (click)="saveAnswer(0)"> {{ ('template-generator.answers.' + currentQuestionIndex + '.0') | translate }} </span>
             <span class="answer {{ savedAnswer === 1 ? 'selected' : ''}}"
                   (click)="saveAnswer(1)"> {{ ('template-generator.answers.' + currentQuestionIndex + '.1') | translate }} </span>
-            <span class="answer {{ savedAnswer === 2 ? 'selected' : ''}}"
+            <span *ngIf="showQuestion()" class="answer {{ savedAnswer === 2 ? 'selected' : ''}}"
                   (click)="saveAnswer(2)"> {{ ('template-generator.answers.' + currentQuestionIndex + '.2') | translate }} </span>
-            <span class="answer {{ savedAnswer === 3 ? 'selected' : ''}}"
+            <span *ngIf="showQuestion()" class="answer {{ savedAnswer === 3 ? 'selected' : ''}}"
                   (click)="saveAnswer(3)"> {{ ('template-generator.answers.' + currentQuestionIndex + '.3') | translate }} </span>
           </div>
           <div class="control">
-            <span class="button {{currentQuestionIndex === 0 ? 'disabled' : ''}}" (click)="goBack()"> {{ 'template-generator.back' | translate }} </span>
-            <span class="button {{canFinish() ? 'disabled' : ''}}" (click)="finish()"> {{ 'template-generator.finish' | translate }} </span>
+            <span class="button {{currentQuestionIndex === 0 ? 'disabled' : ''}}"
+                  (click)="goBack()"> {{ 'template-generator.back' | translate }} </span>
+            <span class="button {{canFinish() ? 'disabled' : ''}}"
+                  (click)="finish()"> {{ 'template-generator.finish' | translate }} </span>
             <span
               class="button {{savedAnswer === -1 || currentQuestionIndex === maxQuestions - 1 ? 'disabled' : ''}}"
               (click)="goNext()"> {{ 'template-generator.next' | translate }}</span>
@@ -60,6 +62,7 @@
     <app-result *ngIf="currentViewState === viewState.RESULT" [results]="savedAnswers"></app-result>
   </div>
   <div class="footer">
-    <span class="text"> <a href="https://github.com/robertnitu02" target="_blank">Nițu Robert</a> | SCSS U.P.B © 2023</span>
+    <span class="text"> <a href="https://github.com/robertnitu02"
+                           target="_blank">Nițu Robert</a> | SCSS U.P.B © 2023</span>
   </div>
 </div>
