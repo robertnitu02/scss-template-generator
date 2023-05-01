@@ -1,5 +1,19 @@
 {
   "template-generator": {
-    "home": "Acasă"
+    "home": "Acasă",
+    "title": "Generator de site-uri de prezentare",
+    "start-create": "Creează-ți propriul site de prezentare pentru firma ta!",
+    "create": "Începe",
+    "title-form": "Completează chestionarul",
+    "back": "< ÎNAPOI",
+    "finish": "TERMINĂ",
+    "next": "URMĂTOAREA >",
+    "paragraph": {
+      "1": "paragraph 1",
+      "2": "paragraph 2",
+      "3": "paragraph 3",
+      "4": "paragraph 4",
+      "5": "paragraph 5"
+    }
   }
 }

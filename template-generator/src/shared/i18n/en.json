@@ -1,5 +1,19 @@
 {
   "template-generator": {
-    "home": "Home"
+    "home": "Home",
+    "title": "Presentation website generator",
+    "start-create": "Create your own presentation website for your company!",
+    "create": "Start",
+    "title-form": "Complete the form",
+    "back": "< BACK",
+    "finish": "FINISH",
+    "next": "NEXT >",
+    "paragraph": {
+      "1": "paragraph 1",
+      "2": "paragraph 2",
+      "3": "paragraph 3",
+      "4": "paragraph 4",
+      "5": "paragraph 5"
+    }
   }
 }

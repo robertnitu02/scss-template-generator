@@ -9,87 +9,49 @@
   <div class="content">
     <ng-container *ngIf="currentViewState === viewState.HOME">
       <div class="home">
-        <div class="title">
-          TITLE
-        </div>
+        <div class="title"> {{ 'template-generator.title' | translate }} </div>
         <div class="content">
           <div class="left">
             <div class="paragraphs">
-              <div class="paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et velit sit amet massa tincidunt
-                tristique id nec velit. Fusce at vulputate enim. In mollis tristique libero et mattis. Curabitur id
-                auctor lorem. Etiam gravida feugiat eros, vitae vulputate augue dignissim in. Mauris elementum, purus
-                vel tincidunt tempor, nunc felis molestie ligula, non luctus risus orci efficitur nunc. Vestibulum in
-                tellus nunc. Praesent quis diam auctor, condimentum turpis vitae, maximus elit. Duis vel ex dui. Aliquam
-                facilisis elit sed volutpat facilisis. Phasellus ac enim vulputate, euismod justo sed, efficitur justo.
-                Morbi aliquet tincidunt lectus, ac varius urna. Suspendisse et turpis luctus, facilisis sapien dictum,
-                dictum lorem.
-              </div>
-              <div class="paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et velit sit amet massa tincidunt
-                tristique id nec velit. Fusce at vulputate enim. In mollis tristique libero et mattis. Curabitur id
-                auctor lorem. Etiam gravida feugiat eros, vitae vulputate augue dignissim in. Mauris elementum, purus
-                vel tincidunt tempor, nunc felis molestie ligula, non luctus risus orci efficitur nunc. Vestibulum in
-                tellus nunc. Praesent quis diam auctor, condimentum turpis vitae, maximus elit. Duis vel ex dui. Aliquam
-                facilisis elit sed volutpat facilisis. Phasellus ac enim vulputate, euismod justo sed, efficitur justo.
-                Morbi aliquet tincidunt lectus, ac varius urna. Suspendisse et turpis luctus, facilisis sapien dictum,
-                dictum lorem.
-              </div>
+              <div class="paragraph"> {{ 'template-generator.paragraph.1' | translate }} </div>
+              <div class="paragraph"> {{ 'template-generator.paragraph.2' | translate }} </div>
               <div class="paragraph">
                 <div class="info">
-                  <span class="text">TEXT</span>
+                  <span class="text"> {{ 'template-generator.start-create' | translate }} </span>
                   <span class="button" (click)="createTemplate()">
-                    CREATE
+                    {{ 'template-generator.create' | translate }}
                   </span>
                 </div>
               </div>
             </div>
           </div>
-          <div class="right-top">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et velit sit amet massa tincidunt
-            tristique id nec velit. Fusce at vulputate enim. In mollis tristique libero et mattis. Curabitur id
-            auctor lorem. Etiam gravida feugiat eros, vitae vulputate augue dignissim in. Mauris elementum, purus
-            vel tincidunt tempor, nunc felis molestie ligula, non luctus risus orci efficitur nunc. Vestibulum in
-            tellus nunc.
-          </div>
-          <div class="right-mid">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et velit sit amet massa tincidunt
-            tristique id nec velit. Fusce at vulputate enim. In mollis tristique libero et mattis. Curabitur id
-            auctor lorem. Etiam gravida feugiat eros, vitae vulputate augue dignissim in. Mauris elementum, purus
-            vel tincidunt tempor, nunc felis molestie ligula, non luctus risus orci efficitur nunc. Vestibulum in
-            tellus nunc.
-          </div>
-          <div class="right-bottom">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et velit sit amet massa tincidunt
-            tristique id nec velit. Fusce at vulputate enim. In mollis tristique libero et mattis. Curabitur id
-            auctor lorem. Etiam gravida feugiat eros, vitae vulputate augue dignissim in. Mauris elementum, purus
-            vel tincidunt tempor, nunc felis molestie ligula, non luctus risus orci efficitur nunc. Vestibulum in
-            tellus nunc.
-          </div>
+          <div class="right-top"> {{ 'template-generator.paragraph.3' | translate }} </div>
+          <div class="right-mid"> {{ 'template-generator.paragraph.4' | translate }} </div>
+          <div class="right-bottom"> {{ 'template-generator.paragraph.5' | translate }} </div>
         </div>
       </div>
     </ng-container>
     <ng-container *ngIf="currentViewState === viewState.FORM">
       <div class="form">
-        <div class="title">
-          COMPLETEAZĂ CHESTIONARUL
-        </div>
+        <div class="title">  {{ 'template-generator.title-form' | translate }} </div>
         <div class="content">
-          <div class="question">
-            {{ questions[currentQuestionIndex].question }}
-          </div>
+          <div class="question"> {{ questions[currentQuestionIndex].question }} </div>
           <div class="answers">
-            <span class="answer" (click)="saveAnswer(0)"> {{ questions[currentQuestionIndex].answers[0] }} </span>
-            <span class="answer" (click)="saveAnswer(1)"> {{ questions[currentQuestionIndex].answers[1] }} </span>
-            <span class="answer" (click)="saveAnswer(2)"> {{ questions[currentQuestionIndex].answers[2] }} </span>
-            <span class="answer" (click)="saveAnswer(3)"> {{ questions[currentQuestionIndex].answers[3] }} </span>
+            <span class="answer {{ savedAnswer === 0 ? 'selected' : ''}}"
+                  (click)="saveAnswer(0)"> {{ questions[currentQuestionIndex].answers[0] }} </span>
+            <span class="answer {{ savedAnswer === 1 ? 'selected' : ''}}"
+                  (click)="saveAnswer(1)"> {{ questions[currentQuestionIndex].answers[1] }} </span>
+            <span class="answer {{ savedAnswer === 2 ? 'selected' : ''}}"
+                  (click)="saveAnswer(2)"> {{ questions[currentQuestionIndex].answers[2] }} </span>
+            <span class="answer {{ savedAnswer === 3 ? 'selected' : ''}}"
+                  (click)="saveAnswer(3)"> {{ questions[currentQuestionIndex].answers[3] }} </span>
           </div>
           <div class="control">
-            <span class="button {{currentQuestionIndex === 0 ? 'disabled' : ''}}" (click)="goBack()"> < GO BACK</span>
+            <span class="button {{currentQuestionIndex === 0 ? 'disabled' : ''}}" (click)="goBack()"> {{ 'template-generator.back' | translate }} </span>
+            <span class="button {{currentQuestionIndex !== questions.length - 1 ? 'disabled' : ''}}" (click)="finish()"> {{ 'template-generator.finish' | translate }} </span>
             <span
               class="button {{savedAnswer === -1 || currentQuestionIndex === questions.length - 1 ? 'disabled' : ''}}"
-              (click)="goNext()"> NEXT ></span>
-            <span class="button {{currentQuestionIndex !== questions.length - 1 ? 'disabled' : ''}}" (click)="finish()"> FINISH ></span>
+              (click)="goNext()"> {{ 'template-generator.next' | translate }}</span>
           </div>
         </div>
       </div>
