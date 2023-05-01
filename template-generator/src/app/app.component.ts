@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Question } from '../shared/models/question.model';
 
 import { TranslateService } from '@ngx-translate/core';
 import defaultEnLanguage from '../shared/i18n/en.json';
@@ -20,29 +19,13 @@ enum ViewState {
 export class AppComponent implements OnInit {
   viewState = ViewState;
 
-  currentViewState = this.viewState.RESULT;
-  questions: Question[] = [
-    {
-      id: 0,
-      question: 'Ce faci',
-      answers: ['r1', 'r2', 'r3', 'r4'],
-    },
-    {
-      id: 1,
-      question: 'Ce caci',
-      answers: ['cac1', 'cac2', 'cac3', 'cac4'],
-    },
-    {
-      id: 2,
-      question: 'bine!',
-      answers: ['ra', 'ra', 'ra', 'ra'],
-    },
-  ];
+  currentViewState = this.viewState.FORM;
 
   language = 'en';
   currentQuestionIndex = 0;
+  maxQuestions = 4;
   savedAnswer = -1;
-  savedAnswers: number[] = [];
+  savedAnswers: number[] = [-1, -1, -1, -1];
 
   constructor(private translate: TranslateService) {
     translate.setTranslation('en', defaultEnLanguage);
@@ -50,9 +33,7 @@ export class AppComponent implements OnInit {
     translate.setDefaultLang(this.language);
   }
 
-  ngOnInit(): void {
-    console.log(this.questions.length);
-  }
+  ngOnInit(): void {}
 
   changeLanguage() {
     this.language = this.language == 'ro' ? 'en' : 'ro';
@@ -75,7 +56,7 @@ export class AppComponent implements OnInit {
   goBack() {
     if (
       this.currentQuestionIndex < 0 ||
-      this.currentQuestionIndex > this.questions.length
+      this.currentQuestionIndex > this.maxQuestions
     )
       return;
     this.currentQuestionIndex -= 1;
@@ -84,44 +65,39 @@ export class AppComponent implements OnInit {
   }
 
   goNext() {
-    if (this.savedAnswer === -1) return;
-    console.log(this.currentQuestionIndex + ' ' + this.questions.length);
-    this.currentQuestionIndex +=
-      this.currentQuestionIndex < this.questions.length - 1 ? 1 : 0;
-    if (this.currentQuestionIndex === this.questions.length - 1) {
-      console.log('over');
-      console.log(JSON.stringify(this.savedAnswers));
-    }
-    this.savedAnswer = -1;
+    if (
+      this.savedAnswer === -1 ||
+      this.savedAnswers[this.currentQuestionIndex] === -1 ||
+      this.currentQuestionIndex === this.maxQuestions - 1
+    )
+      return;
+    console.log(this.currentQuestionIndex + ' ' + this.maxQuestions);
+    this.currentQuestionIndex += 1;
+    this.savedAnswer = this.savedAnswers[this.currentQuestionIndex];
   }
 
   saveAnswer(index: number) {
     if (this.savedAnswer === index) {
       this.savedAnswer = -1;
+      this.savedAnswers[this.currentQuestionIndex] = -1;
       return;
     }
     this.savedAnswer = index;
-    this.savedAnswers[this.questions[this.currentQuestionIndex].id] =
-      this.savedAnswer;
-    console.log(`index: ${this.savedAnswer}`);
+    this.savedAnswers[this.currentQuestionIndex] = this.savedAnswer;
+    console.log(`index: ${index}`);
   }
 
   finish() {
-    console.log(
-      `${this.savedAnswers.length} | ${
-        this.questions.length
-      } | ${this.savedAnswers.some((el) => el !== null)}`
-    );
-    if (
-      this.savedAnswers.length !== this.questions.length ||
-      !this.savedAnswers.some((el) => el !== null)
-    )
-      return;
+    if (this.savedAnswers.some((el) => el === -1)) return;
 
     console.log('finish');
     this.currentViewState = this.viewState.LOADING;
     setTimeout(() => {
       this.currentViewState = this.viewState.RESULT;
     }, 3500);
+  }
+
+  canFinish() {
+    return this.savedAnswers.some((el) => el === -1);
   }
 }
