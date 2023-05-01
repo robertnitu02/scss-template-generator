@@ -3,19 +3,20 @@
     "home": "Home",
     "title": "Presentation website generator",
     "start-create": "Create your own presentation website for your company!",
-    "create": "Start",
+    "create": "START",
     "result": "Result",
     "loading": "Loading",
     "title-form": "Complete the form",
     "back": "< BACK",
     "finish": "FINISH",
     "next": "NEXT >",
+    "copy": "Copy",
     "paragraph": {
-      "1": "paragraph 1",
-      "2": "paragraph 2",
-      "3": "paragraph 3",
-      "4": "paragraph 4",
-      "5": "paragraph 5"
+      "1": "Build your dream website in minutes with our easy-to-use template generator based on form. No coding required! Start today. Whether you're a business owner, blogger, or freelancer, our template generator has everything you need to build the perfect website.",
+      "2": "Stop stressing over website design. Our template generator takes care of the hard work so you can focus on growing your business. Our website template generator is perfect for small business owners, entrepreneurs, and bloggers. Try it out now!",
+      "3": "To generate a template for your website, you need to answer a simple questionnaire. Based on your answers, a suitable site template will be generated for you to start with!",
+      "4": "Don't know where to start with your website? Let our easy-to-use form guide you to the perfect template for your needs. Say goodbye to guesswork with our form-based template generator. Answer a few simple questions and get a website template tailored to your requirements.",
+      "5": "Don't waste time and money on website design. Let our form-based template generator do the hard work for you. Say goodbye to the frustration of website design. Use our form to get a website template that's tailored to your exact needs and preferences.\n\n"
     },
     "questions": {
       "0": "question 1",

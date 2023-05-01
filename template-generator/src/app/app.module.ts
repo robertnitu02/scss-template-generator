@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { ResultComponent } from './result/result.component';
 import { LoadingComponent } from './loading/loading.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import {ClipboardModule} from "@angular/cdk/clipboard";
 
 @NgModule({
   declarations: [AppComponent, ResultComponent, LoadingComponent],
@@ -28,6 +29,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     }),
     FormsModule,
     MatProgressSpinnerModule,
+    ClipboardModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

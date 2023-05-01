@@ -52,6 +52,7 @@
         text-align: center;
         font-size: 2.5rem;
         font-weight: bolder;
+        color: variables.$white;
       }
 
       .content {
@@ -73,13 +74,16 @@
             grid-template-rows: 30% 30% auto;
 
             .paragraph {
+              display: grid;
+              text-align: left;
+              align-items: center;
+              color: white;
+              padding: 1.5rem;
 
               .info {
                 display: grid;
                 width: 100%;
                 height: 100%;
-                text-align: center;
-                align-content: center;
                 grid-template-rows: 1fr 1fr;
               }
             }
@@ -107,23 +111,32 @@
 
         .right-top {
           display: grid;
+          text-align: center;
+          align-items: center;
           width: 100%;
           height: 100%;
           padding: 1rem;
+          color: variables.$white;
         }
 
         .right-mid {
           display: grid;
+          text-align: center;
+          align-items: center;
           width: 100%;
           height: 100%;
           padding: 1rem;
+          color: variables.$white;
         }
 
         .right-bottom {
           display: grid;
+          text-align: center;
+          align-items: center;
           width: 100%;
           height: 100%;
           padding: 1rem;
+          color: variables.$white;
         }
       }
     }

@@ -9,7 +9,7 @@
   <div class="content">
     <ng-container *ngIf="currentViewState === viewState.HOME">
       <div class="home">
-        <div class="title"> {{ 'template-generator.title' | translate }} </div>
+        <div class="title">🪛 {{ 'template-generator.title' | translate }} 🪛</div>
         <div class="content">
           <div class="left">
             <div class="paragraphs">
@@ -17,7 +17,7 @@
               <div class="paragraph"> {{ 'template-generator.paragraph.2' | translate }} </div>
               <div class="paragraph">
                 <div class="info">
-                  <span class="text"> {{ 'template-generator.start-create' | translate }} </span>
+                  <span class="text">{{ 'template-generator.start-create' | translate }} </span>
                   <span class="button" (click)="createTemplate()">
                     {{ 'template-generator.create' | translate }}
                   </span>
@@ -33,7 +33,7 @@
     </ng-container>
     <ng-container *ngIf="currentViewState === viewState.FORM">
       <div class="form">
-        <div class="title">  {{ 'template-generator.title-form' | translate }} </div>
+        <div class="title"> ✍️ {{ 'template-generator.title-form' | translate }} ✍️</div>
         <div class="content">
           <div class="question"> {{ ('template-generator.questions.' + currentQuestionIndex) | translate }} </div>
           <div class="answers">

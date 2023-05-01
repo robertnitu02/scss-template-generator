@@ -45,7 +45,14 @@
     .paragraph {
       display: grid;
       grid-template-rows: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 80% 20%;
+
+      .first {
+        display: grid;
+        grid-row: 1 / span 2;
+        align-items: center;
+        text-align: center;
+      }
 
       &__text {
         text-align: center;

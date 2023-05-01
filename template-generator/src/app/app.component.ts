@@ -19,7 +19,7 @@ enum ViewState {
 export class AppComponent implements OnInit {
   viewState = ViewState;
 
-  currentViewState = this.viewState.FORM;
+  currentViewState = this.viewState.HOME;
 
   language = 'en';
   currentQuestionIndex = 0;

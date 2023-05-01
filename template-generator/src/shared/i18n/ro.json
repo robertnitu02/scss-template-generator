@@ -1,21 +1,22 @@
 {
   "template-generator": {
     "home": "Acasă",
-    "title": "Generator de site-uri de prezentare",
+    "title": "Generator site-uri de prezentare",
     "start-create": "Creează-ți propriul site de prezentare pentru firma ta!",
-    "create": "Începe",
+    "create": "ÎNCEPE",
     "loading": "Se încarcă",
     "result": "Rezultat",
     "title-form": "Completează chestionarul",
     "back": "< ÎNAPOI",
     "finish": "TERMINĂ",
     "next": "URMĂTOAREA >",
+    "copy": "Copiază",
     "paragraph": {
-      "1": "paragraph 1",
-      "2": "paragraph 2",
-      "3": "paragraph 3",
-      "4": "paragraph 4",
-      "5": "paragraph 5"
+      "1": "Construiți site-ul visurilor dumneavoastră în doar câteva minute cu generatorul nostru de template-uri bazat pe formular. Nu este nevoie de cunoștințe de programare! Începeți astăzi. Indiferent dacă sunteți proprietar de afacere, blogger sau freelancer, generatorul nostru de template-uri are tot ce aveți nevoie pentru a construi site-ul perfect.",
+      "2": "Nu vă mai stresați cu designul site-ului. Generatorul nostru de template-uri se ocupă de munca grea astfel încât să vă puteți concentra pe dezvoltarea afacerii dumneavoastră. Generatorul nostru de template-uri pentru site-uri este perfect pentru proprietarii de afaceri mici, antreprenorii și bloggerii. Încercați-l acum!",
+      "3": "Pentru a vă putea genera un template după care vă puteți construi site-ul trebuie să răspundeți la un chestionar simplu. Pe baza răspunsurilor vă va fi generat un template de site numai bun pentru început!",
+      "4": "Nu știți de unde să începeți cu site-ul dumneavoastră? Lăsați formularul nostru să vă ghideze către template-ul perfect. Răspundeți la câteva întrebări simple și obțineți un template de site personalizat pentru cerințele dumneavoastră.",
+      "5": "Nu mai pierdeți timp și bani pe design-ul site-ului. Lăsați generatorul nostru de template-uri bazat pe formular să facă munca grea pentru dumneavoastră. Spuneți adio frustrărilor din design-ul site-ului. Folosiți formularul nostru pentru a obține un template de site personalizat pentru nevoile și preferințele dumneavoastră."
     },
     "questions": {
       "0": "întrebare 1",

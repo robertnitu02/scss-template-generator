@@ -2,21 +2,21 @@
   <span class="title"> {{ 'template-generator.result' | translate }}</span>
   <div class="content">
     <div class="paragraph">
-      <span class="paragraph__text">HTML</span>
-      <span class="paragraph__text">COPY</span>
+      <span class="paragraph__text first">HTML Code</span>
+      <span class="paragraph__text" [cdkCopyToClipboard]="sourceHtml">{{ 'template-generator.copy' | translate }}</span>
     </div>
     <div class="html-code">
       <pre>
-        {{source}}
+        {{sourceHtml}}
       </pre>
     </div>
     <div class="paragraph">
-      <span class="paragraph__text">SCSS</span>
-      <span class="paragraph__text">COPY</span>
+      <span class="paragraph__text first">SCSS Code</span>
+      <span class="paragraph__text"  [cdkCopyToClipboard]="sourceScss">{{ 'template-generator.copy' | translate }}</span>
     </div>
     <div class="scss-code">
       <pre>
-        {{source}}
+        {{sourceScss}}
       </pre>
     </div>
   </div>
