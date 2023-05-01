@@ -58,7 +58,7 @@ export class AppComponent implements OnInit {
 
   goBack() {
     if (
-      this.currentQuestionIndex < 0 ||
+      this.currentQuestionIndex === 0 ||
       this.currentQuestionIndex > this.maxQuestions
     )
       return;
