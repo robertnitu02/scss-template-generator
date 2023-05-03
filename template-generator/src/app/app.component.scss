@@ -42,6 +42,7 @@
       display: grid;
       width: 1080px;
       height: 750px;
+      border-radius: 2%;
       grid-template-rows: 15% 85%;
       @include mat.elevation(2);
       background: radial-gradient(circle at 10% 20%, rgb(75, 108, 183) 0%, rgb(55, 82, 141) 90%);
@@ -145,6 +146,7 @@
       display: grid;
       width: 1080px;
       height: 750px;
+      border-radius: 2%;
       grid-template-rows: 10% 80% 10%;
       @include mat.elevation(2);
 
