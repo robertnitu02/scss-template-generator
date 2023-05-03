@@ -50,6 +50,8 @@ export class AppComponent implements OnInit {
     )
       return;
     this.currentViewState = this.viewState.HOME;
+    this.savedAnswer = -1;
+    this.savedAnswers = [-1, -1, -1, -1, -1, -1];
   }
 
   createTemplate() {
