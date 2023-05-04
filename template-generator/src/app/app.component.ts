@@ -19,7 +19,7 @@ enum ViewState {
 export class AppComponent implements OnInit {
   viewState = ViewState;
 
-  currentViewState = this.viewState.RESULT;
+  currentViewState = this.viewState.HOME;
 
   language = 'en';
 
@@ -28,7 +28,6 @@ export class AppComponent implements OnInit {
   onlyTwoAnswerQuestions = [4];
 
   savedAnswer = -1;
-  // savedAnswers: number[] = [1, 1, 1, 1, 1, 1];
   savedAnswers: number[] = [-1, -1, -1, -1, -1, -1];
 
   constructor(private translate: TranslateService) {
