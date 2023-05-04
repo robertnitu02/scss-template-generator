@@ -5,6 +5,7 @@
   display: grid;
   width: 1080px;
   height: 750px;
+  border-radius: 2%;
   text-align: center;
   grid-template-rows: 5% 95%;
   align-items: center;
@@ -60,10 +61,25 @@
         font-weight: bold;
         color: variables.$white;
       }
+
+      .copy {
+        &:hover {
+          color: variables.$gray;
+          cursor: pointer;
+        }
+      }
+
+      .info-copy {
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: variables.$green;
+      }
     }
   }
 }
 
 pre {
-  overflow-y: auto
+  overflow-y: auto;
+  overflow-x: hidden;
+  text-align: left;
 }

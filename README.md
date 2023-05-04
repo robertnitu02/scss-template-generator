@@ -1,1 +1,2 @@
-# SCSS Template Generator
+# Lucrare în cadrul Sesiunii de Comunicări Științifice Studențești 2023 - Universitatea Politehnica București 
+* Cercetare privind dezvoltarea unui generator de template-uri personalizate pentru site-uri de prezentare

@@ -3,7 +3,8 @@
   <div class="content">
     <div class="paragraph">
       <span class="paragraph__text first">HTML Code</span>
-      <span class="paragraph__text" [cdkCopyToClipboard]="sourceHtml">{{ 'template-generator.copy' | translate }}</span>
+      <span class="paragraph__text copy" [cdkCopyToClipboard]="sourceHtml" (click)="copy(copyCategory.HTML)">{{ 'template-generator.copy' | translate }}</span>
+      <span *ngIf="htmlCopied" class="paragraph__text info-copy" >{{ 'template-generator.copied' | translate }}</span>
     </div>
     <div class="html-code">
       <pre>
@@ -12,7 +13,8 @@
     </div>
     <div class="paragraph">
       <span class="paragraph__text first">CSS Code</span>
-      <span class="paragraph__text"  [cdkCopyToClipboard]="sourceCss">{{ 'template-generator.copy' | translate }}</span>
+      <span class="paragraph__text copy"  [cdkCopyToClipboard]="sourceCss" (click)="copy(copyCategory.CSS)">{{ 'template-generator.copy' | translate }}</span>
+      <span *ngIf="cssCopied" class="paragraph__text info-copy" >{{ 'template-generator.copied' | translate }}</span>
     </div>
     <div class="scss-code">
       <pre>
