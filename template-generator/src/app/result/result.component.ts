@@ -37,7 +37,8 @@ export class ResultComponent implements OnInit {
         <title>Presentation Website</title>
     </head>
     <body>
-        <div class="app">`;
+    <div class="app">
+    `;
 
   sourceCss: string = `
     /* Default Css */
@@ -93,177 +94,171 @@ export class ResultComponent implements OnInit {
       colorFooterClassHtml = 'cool-footer';
       colorBoxClassHtml = 'box-cool';
       colorsCodeCss = `
-      /* Cool */
-      .cool-navbar {
-          display: grid;
-          align-items: center;
-          text-align: center;
-          background: linear-gradient(95.2deg, rgb(173, 252, 234) 26.8%, rgb(192, 229, 246) 64%);
-      }
+    /* Cool */
+    .cool-navbar {
+        background: linear-gradient(95.2deg, rgb(173, 252, 234) 26.8%, rgb(192, 229, 246) 64%);
+    }
 
-      .cool-content {
-          display: grid;
-          align-items: center;
-          text-align: center;
-          background: linear-gradient(109.6deg, rgb(204, 228, 247) 11.2%, rgb(237, 246, 250) 100.2%);
-      }
+    .cool-content {
+        background: linear-gradient(109.6deg, rgb(204, 228, 247) 11.2%, rgb(237, 246, 250) 100.2%);
+    }
 
-      .cool-footer {
-          display: grid;
-          align-items: center;
-          text-align: center;
-          background: linear-gradient(95.2deg, rgb(173, 252, 234) 26.8%, rgb(192, 229, 246) 64%);
-      }
+    .cool-footer {
+        background: linear-gradient(95.2deg, rgb(173, 252, 234) 26.8%, rgb(192, 229, 246) 64%);
+    }
 
-      .box-cool {
-          display: grid;
-          align-items: center;
-          text-align: center;
-          background: linear-gradient(95.2deg, rgb(51, 186, 154) 26.8%, rgb(55, 133, 169) 64%);
-      }`;
+    .box-cool {
+        background: linear-gradient(95.2deg, rgb(51, 186, 154) 26.8%, rgb(55, 133, 169) 64%);
+    }`;
     } else if (this.results[CATEGORY.COLORS] === 1) {
       colorNavbarClassHtml = 'light-cool-navbar';
       colorContentClassHtml = 'light-cool-content';
       colorFooterClassHtml = 'light-cool-footer';
       colorBoxClassHtml = 'box-light-cool';
       colorsCodeCss = `
-      /* Light Cool */
-      .light-cool-navbar {
-          background: linear-gradient(65.5deg, rgb(23, 205, 205) -15.1%, rgb(23, 25, 95) 71.5%);
-      }
+    /* Light Cool */
+    .light-cool-navbar {
+        background: linear-gradient(65.5deg, rgb(23, 205, 205) -15.1%, rgb(23, 25, 95) 71.5%);
+    }
 
-      .light-cool-content {
-          background: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
-      }
+    .light-cool-content {
+        background: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+    }
 
-      .light-cool-footer {
-          background: linear-gradient(65.5deg, rgb(23, 205, 205) -15.1%, rgb(23, 25, 95) 71.5%);
-      }
+    .light-cool-footer {
+        background: linear-gradient(65.5deg, rgb(23, 205, 205) -15.1%, rgb(23, 25, 95) 71.5%);
+    }
 
-      .box-light-cool {
-          background: linear-gradient(65.5deg, rgb(17, 238, 238) -15.1%, rgb(22, 26, 145) 71.5%);
-      }`;
+    .box-light-cool {
+        background: linear-gradient(65.5deg, rgb(17, 238, 238) -15.1%, rgb(22, 26, 145) 71.5%);
+    }`;
     } else if (this.results[CATEGORY.COLORS] === 2) {
       colorNavbarClassHtml = 'warm-navbar';
       colorContentClassHtml = 'warm-content';
       colorFooterClassHtml = 'warm-footer';
       colorBoxClassHtml = 'box-warm';
       colorsCodeCss = `
-      /* Warm */
-      .warm-navbar {
-          background: radial-gradient(755px at 10.1% 95.3%, rgb(242, 188, 141) 0%, rgb(242, 159, 141) 100.2%);
-      }
+    /* Warm */
+    .warm-navbar {
+        background: radial-gradient(755px at 10.1% 95.3%, rgb(242, 188, 141) 0%, rgb(242, 159, 141) 100.2%);
+    }
 
-      .warm-content {
-          background: linear-gradient(110.3deg, rgb(238, 179, 123) 8.7%, rgb(216, 103, 77) 47.5%, rgb(114, 43, 54) 89.1%);
-      }
+    .warm-content {
+        background: linear-gradient(110.3deg, rgb(238, 179, 123) 8.7%, rgb(216, 103, 77) 47.5%, rgb(114, 43, 54) 89.1%);
+    }
 
-      .warm-footer {
-          background: radial-gradient(755px at 10.1% 95.3%, rgb(242, 188, 141) 0%, rgb(242, 159, 141) 100.2%);
-      }
+    .warm-footer {
+        background: radial-gradient(755px at 10.1% 95.3%, rgb(242, 188, 141) 0%, rgb(242, 159, 141) 100.2%);
+    }
 
-      .box-warm {
-          background: radial-gradient(755px at 10.1% 95.3%, rgb(239, 149, 70) 0%, rgb(242, 97, 65) 100.2%);
-      }`;
+    .box-warm {
+        background: radial-gradient(755px at 10.1% 95.3%, rgb(239, 149, 70) 0%, rgb(242, 97, 65) 100.2%);
+    }`;
     } else if (this.results[CATEGORY.COLORS] === 3) {
       colorNavbarClassHtml = 'light-warm-navbar';
       colorContentClassHtml = 'light-warm-content';
       colorFooterClassHtml = 'light-warm-footer';
       colorBoxClassHtml = 'box-light-warm';
       colorsCodeCss = `
-      /* Light Warm */
-      .light-warm-navbar {
-          background: linear-gradient(108.7deg, rgb(224, 235, 213) 8.1%, rgb(37, 148, 141) 91.2%);
-      }
+    /* Light Warm */
+    .light-warm-navbar {
+        background: linear-gradient(108.7deg, rgb(224, 235, 213) 8.1%, rgb(37, 148, 141) 91.2%);
+    }
 
-      .light-warm-content {
-          background: radial-gradient(939px at 94.7% 50%, rgb(0, 178, 169) 0%, rgb(0, 106, 101) 76.9%);
-      }
+    .light-warm-content {
+        background: radial-gradient(939px at 94.7% 50%, rgb(0, 178, 169) 0%, rgb(0, 106, 101) 76.9%);
+    }
 
-      .light-warm-footer {
-          background: linear-gradient(108.7deg, rgb(224, 235, 213) 8.1%, rgb(37, 148, 141) 91.2%);
-      }
+    .light-warm-footer {
+        background: linear-gradient(108.7deg, rgb(224, 235, 213) 8.1%, rgb(37, 148, 141) 91.2%);
+    }
 
-      .box-light-warm {
-          background: linear-gradient(108.7deg, rgb(188, 241, 136) 8.1%, rgb(31, 180, 170) 91.2%);
-      }`;
+    .box-light-warm {
+        background: linear-gradient(108.7deg, rgb(188, 241, 136) 8.1%, rgb(31, 180, 170) 91.2%);
+    }`;
     }
 
     let navbarClassHtml = `navbar-${this.results[CATEGORY.NAVBAR] + 2}`;
     let footerClassHtml = `footer-${this.results[CATEGORY.FOOTER] + 1}`;
     let modernClassHtml = this.results[CATEGORY.STYLE] === 0 ? 'modern' : '';
     if (this.results[CATEGORY.STYLE] === 0)
-      this.sourceCss += `.modern { border-radius: 2%; }`;
+      this.sourceCss += `
+      .modern { border-radius: 2%; }`;
 
     let navbarCodeHtml = '';
     let navbarCodeCss = '';
     if (this.results[CATEGORY.NAVBAR] === 0) {
-      navbarCodeHtml = `<div class="${navbarClassHtml} ${colorNavbarClassHtml}">
-            <span>Buton 1</span>
-            <span></span>
-            <span>Buton 2</span>
-        </div>`;
+      navbarCodeHtml = `
+      <div class="${navbarClassHtml} ${colorNavbarClassHtml}">
+          <span>Buton 1</span>
+          <span></span>
+          <span>Buton 2</span>
+      </div>`;
       navbarCodeCss = `
-      .navbar-2 {
-          display: grid;
-          align-items: center;
-          text-align: center;
-          grid-template-columns: 10% 80% 10%;
-          background-color: red;
-      }`;
+    .navbar-2 {
+        display: grid;
+        align-items: center;
+        text-align: center;
+        grid-template-columns: 10% 80% 10%;
+        background-color: red;
+    }`;
     } else if (this.results[CATEGORY.NAVBAR] === 1) {
-      navbarCodeHtml = `<div class="${navbarClassHtml} ${colorNavbarClassHtml}">
-            <span>Buton 1</span>
-            <span>Buton 2</span>
-            <span></span>
-            <span>Buton 3</span>
-        </div>`;
+      navbarCodeHtml = `
+      <div class="${navbarClassHtml} ${colorNavbarClassHtml}">
+          <span>Buton 1</span>
+          <span>Buton 2</span>
+          <span></span>
+          <span>Buton 3</span>
+      </div>`;
       navbarCodeCss = `
-      .navbar-3 {
-          display: grid;
-          align-items: center;
-          text-align: center;
-          grid-template-columns: 10% 10% 70% 10%;
-          background-color: red;
-      }`;
+    .navbar-3 {
+        display: grid;
+        align-items: center;
+        text-align: center;
+        grid-template-columns: 10% 10% 70% 10%;
+        background-color: red;
+    }`;
     } else if (this.results[CATEGORY.NAVBAR] === 2) {
-      navbarCodeHtml = `<div class="${navbarClassHtml} ${colorNavbarClassHtml}">
-            <span>Buton 1</span>
-            <span>Buton 2</span>
-            <span></span>
-            <span>Buton 3</span>
-            <span>Buton 4</span>
-        </div>`;
+      navbarCodeHtml = `
+      <div class="${navbarClassHtml} ${colorNavbarClassHtml}">
+          <span>Buton 1</span>
+          <span>Buton 2</span>
+          <span></span>
+          <span>Buton 3</span>
+          <span>Buton 4</span>
+      </div>`;
       navbarCodeCss = `
-      .navbar-4 {
-          display: grid;
-          align-items: center;
-          text-align: center;
-          grid-template-columns: 10% 10% 60% 10% 10%;
-          background-color: red;
-      }`;
+    .navbar-4 {
+        display: grid;
+        align-items: center;
+        text-align: center;
+        grid-template-columns: 10% 10% 60% 10% 10%;
+        background-color: red;
+    }`;
     } else if (this.results[CATEGORY.NAVBAR] === 3) {
-      navbarCodeHtml = `<div class="${navbarClassHtml} ${colorNavbarClassHtml}">
-            <span>Buton 1</span>
-            <span>Buton 2</span>
-            <span>Buton 3</span>
-            <span></span>
-            <span>Buton 4</span>
-            <span>Buton 5</span>
-        </div>`;
+      navbarCodeHtml = `
+      <div class="${navbarClassHtml} ${colorNavbarClassHtml}">
+          <span>Buton 1</span>
+          <span>Buton 2</span>
+          <span>Buton 3</span>
+          <span></span>
+          <span>Buton 4</span>
+          <span>Buton 5</span>
+      </div>`;
       navbarCodeCss = `
-      .navbar-5 {
-          display: grid;
-          align-items: center;
-          text-align: center;
-          grid-template-columns: 10% 10% 10% 50% 10% 10%;
-          background-color: red;
-      }`;
+.navbar-5 {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: 10% 10% 10% 50% 10% 10%;
+    background-color: red;
+}`;
     }
     this.sourceHtml += navbarCodeHtml;
-    this.sourceCss += navbarCodeCss;
 
     this.sourceCss += `
+    ${navbarCodeCss}
+
     .content {
         display: grid;
         place-items: center;
@@ -277,47 +272,47 @@ export class ResultComponent implements OnInit {
     let contentCodeHtml = '';
     let contentCssCode = '';
     if (this.results[CATEGORY.CONTENT] === 0) {
-      contentCodeHtml =
-        `<div class="content ${colorContentClassHtml}">\n` +
-        ` <div class="box airy ${colorBoxClassHtml} ${modernClassHtml}">\n` +
-        `    <span class="airy-left-mid"> ${this.placeHolder}</span>\n` +
-        `    <span class="airy-right-p1"> ${this.placeHolder}</span>\n` +
-        `    <span class="airy-right-p2"> ${this.placeHolder}</span>\n` +
-        ` </div>`;
-      `</div>`;
+      contentCodeHtml = `
+      <div class="content ${colorContentClassHtml}">
+         <div class="box airy ${colorBoxClassHtml} ${modernClassHtml}">
+           <span class="airy-left-mid"> ${this.placeHolder}</span>
+           <span class="airy-right-p1"> ${this.placeHolder}</span>
+           <span class="airy-right-p2"> ${this.placeHolder}</span>
+         </div>;
+      </div>`;
       contentCssCode = `
-      .airy {
-          display: grid;
-          grid-template-rows: 1fr 1fr 1fr;
-          grid-template-columns: 1fr 1fr;
-      }
+    .airy {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
 
-      .airy-left-mid {
-          display: grid;
-          text-align: center;
-          align-items: center;
-          grid-row: 1 / span 2;
-          grid-column: 1;
-      }
+    .airy-left-mid {
+        display: grid;
+        text-align: center;
+        align-items: center;
+        grid-row: 1 / span 2;
+        grid-column: 1;
+    }
 
-      .airy-right-p1 {
-          display: grid;
-          text-align: center;
-          align-items: center;
-          grid-row: 1;
-          grid-column: 2;
-      }
+    .airy-right-p1 {
+        display: grid;
+        text-align: center;
+        align-items: center;
+        grid-row: 1;
+        grid-column: 2;
+    }
 
-      .airy-right-p2 {
-          display: grid;
-          text-align: center;
-          align-items: center;
-          grid-row: 2 / span 3;
-          grid-column: 2;
-      }`;
+    .airy-right-p2 {
+        display: grid;
+        text-align: center;
+        align-items: center;
+        grid-row: 2 / span 3;
+        grid-column: 2;
+    }`;
     } else if (this.results[CATEGORY.CONTENT] === 1) {
       contentCodeHtml = `
-        <div class="content ${colorContentClassHtml}">
+      <div class="content ${colorContentClassHtml}">
             <div class="box compact ${colorBoxClassHtml}  ${modernClassHtml}">
                 <span>${this.placeHolder}</span>
                 <span>${this.placeHolder}</span>
@@ -325,44 +320,44 @@ export class ResultComponent implements OnInit {
             </div>
         </div>`;
       contentCssCode = `
-      .compact {
-          display: grid;
-          text-align: center;
-          align-items: center;
-          grid-template-rows: 1fr 1fr 1fr;
-      }`;
+    .compact {
+        display: grid;
+        text-align: center;
+        align-items: center;
+        grid-template-rows: 1fr 1fr 1fr;
+    }`;
     } else if (this.results[CATEGORY.CONTENT] === 2) {
       contentCodeHtml = `
-        <div class="content ${colorContentClassHtml}">
-            <div class="box full ${colorBoxClassHtml}  ${modernClassHtml}">
-                <span>${this.placeHolder}</span>
-                <span>${this.placeHolder}</span>
-                <span>${this.placeHolder}</span>
-                <span>${this.placeHolder}</span>
-                <span>${this.placeHolder}</span>
-                <span>${this.placeHolder}</span>
-            </div>
-        </div>`;
+      <div class="content ${colorContentClassHtml}">
+          <div class="box full ${colorBoxClassHtml}  ${modernClassHtml}">
+              <span>${this.placeHolder}</span>
+              <span>${this.placeHolder}</span>
+              <span>${this.placeHolder}</span>
+              <span>${this.placeHolder}</span>
+              <span>${this.placeHolder}</span>
+              <span>${this.placeHolder}</span>
+          </div>
+      </div>`;
       contentCssCode = `
-      .full {
-          display: grid;
-          align-items: center;
-          text-align: center;
-          grid-template-rows: 1fr 1fr 1fr;
-          grid-template-columns: 1fr 1fr;
-      }`;
+    .full {
+        display: grid;
+        align-items: center;
+        text-align: center;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }`;
     } else if (this.results[CATEGORY.CONTENT] === 3) {
       contentCodeHtml = `
-        <div class="content ${colorContentClassHtml}">
-            <div class="box mixed ${colorBoxClassHtml} ${modernClassHtml}">
-                <span class="left-two-columns ${modernClassHtml}">1</span>
-                <span>${this.placeHolder}</span>
-                <span>${this.placeHolder}</span>
-                <span>${this.placeHolder}</span>
-                <span>${this.placeHolder}</span>
-                <span>${this.placeHolder}</span>
-            </div>
-        </div>`;
+      <div class="content ${colorContentClassHtml}">
+          <div class="box mixed ${colorBoxClassHtml} ${modernClassHtml}">
+              <span class="left-two-columns ${modernClassHtml}">1</span>
+              <span>${this.placeHolder}</span>
+              <span>${this.placeHolder}</span>
+              <span>${this.placeHolder}</span>
+              <span>${this.placeHolder}</span>
+              <span>${this.placeHolder}</span>
+          </div>
+      </div>`;
       contentCssCode = `
       .mixed {
           display: grid;
@@ -390,101 +385,102 @@ export class ResultComponent implements OnInit {
     let footerCssCode = '';
     if (this.results[CATEGORY.FOOTER] === 0) {
       footerCodeHtml = `
-        <div class="${footerClassHtml} ${colorFooterClassHtml}">
-            <span></span>
-            <span>Buton 1</span>
-            <span></span>
-        </div>`;
+      <div class="${footerClassHtml} ${colorFooterClassHtml}">
+          <span></span>
+          <span>Buton 1</span>
+          <span></span>
+      </div>`;
       footerCssCode = `
-      .footer-1 {
-          display: grid;
-          align-items: center;
-          text-align: center;
-          grid-template-columns: 40% 20% 40%;
-          background-color: red;
-      }`;
+    .footer-1 {
+        display: grid;
+        align-items: center;
+        text-align: center;
+        grid-template-columns: 40% 20% 40%;
+        background-color: red;
+    }`;
     } else if (this.results[CATEGORY.FOOTER] === 1) {
       footerCodeHtml = `
-        <div class="${footerClassHtml} ${colorFooterClassHtml}">
-            <span></span>
-            <span>Buton 1</span>
-            <span>Buton 2</span>
-            <span></span>
-        </div>`;
+      <div class="${footerClassHtml} ${colorFooterClassHtml}">
+          <span></span>
+          <span>Buton 1</span>
+          <span>Buton 2</span>
+          <span></span>
+      </div>`;
       footerCssCode = `
-      .footer-2 {
-          display: grid;
-          align-items: center;
-          text-align: center;
-          grid-template-columns: 40% 10% 10% 40%;
-          background-color: red;
-      }`;
+    .footer-2 {
+        display: grid;
+        align-items: center;
+        text-align: center;
+        grid-template-columns: 40% 10% 10% 40%;
+        background-color: red;
+    }`;
     } else if (this.results[CATEGORY.FOOTER] === 2) {
       footerCodeHtml = `
-        <div class="${footerClassHtml} ${colorFooterClassHtml}">
-            <span></span>
-            <span>Buton 1</span>
-            <span>Buton 2</span>
-            <span>Buton 3</span>
-            <span></span>
-        </div>`;
+      <div class="${footerClassHtml} ${colorFooterClassHtml}">
+          <span></span>
+          <span>Buton 1</span>
+          <span>Buton 2</span>
+          <span>Buton 3</span>
+          <span></span>
+      </div>`;
       footerCssCode = `
-      .footer-3 {
-          display: grid;
-          align-items: center;
-          text-align: center;
-          grid-template-columns: 35% 10% 10% 10% 35%;
-          background-color: red;
-      }`;
+    .footer-3 {
+        display: grid;
+        align-items: center;
+        text-align: center;
+        grid-template-columns: 35% 10% 10% 10% 35%;
+        background-color: red;
+    }`;
     } else if (this.results[CATEGORY.FOOTER] === 3) {
       footerCodeHtml = `
-        <div class="${footerClassHtml} ${colorFooterClassHtml}">
-            <span></span>
-            <span>Buton 1</span>
-            <span>Buton 2</span>
-            <span>Buton 3</span>
-            <span>Buton 4</span>
-            <span></span>
-        </div>`;
+      <div class="${footerClassHtml} ${colorFooterClassHtml}">
+          <span></span>
+          <span>Buton 1</span>
+          <span>Buton 2</span>
+          <span>Buton 3</span>
+          <span>Buton 4</span>
+          <span></span>
+      </div>`;
       footerCssCode = `
-      .footer-4 {
-          display: grid;
-          align-items: center;
-          text-align: center;
-          grid-template-columns: 30% 10% 10% 10% 10% 30%;
-          background-color: red;
-      }`;
+    .footer-4 {
+        display: grid;
+        align-items: center;
+        text-align: center;
+        grid-template-columns: 30% 10% 10% 10% 10% 30%;
+        background-color: red;
+    }`;
     }
     this.sourceHtml += footerCodeHtml;
     this.sourceCss += footerCssCode;
 
     let finalCodeHtml = `
-        </div>
-      </body>
-      </html>`;
+
+    </div>
+    </body>
+    </html>`;
     this.sourceHtml += finalCodeHtml;
 
     let fontCodeCss = '';
     if (this.results[CATEGORY.FONT] === 0) {
       fontCodeCss = `
-      span {
-          font-family: 'Verdana';
-      }`;
+    span {
+        font-family: 'Verdana';
+    }`;
     } else if (this.results[CATEGORY.FONT] === 1) {
       fontCodeCss = `
-      span {
-          font-family: 'Franklin Gothic Medium';
-      }`;
+    span {
+        font-family: 'Franklin Gothic Medium';
+    }`;
     } else if (this.results[CATEGORY.FONT] === 2) {
       fontCodeCss = `
-      span {
-          font-family: 'Courier New';
-      }`;
+    span {
+        font-family: 'Courier New';
+    }`;
     } else if (this.results[CATEGORY.FONT] === 3) {
       fontCodeCss = `
-      span {
-          font-family: 'Lucida Sans';
-      }`;
+    span {
+        font-family: 'Lucida Sans';
+    }`;
     }
 
     this.sourceCss += colorsCodeCss;
